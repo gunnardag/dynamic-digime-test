@@ -51,14 +51,12 @@ public class SplashActivity extends AppCompatActivity {
                 Log.d(TAG, "onResponse: success");
 
                 InputStream inputStream = null;
-                byte[] fileReader = new byte[4096];
 
                 long fileSize = response.body().contentLength();
-                long fileSizeDownloaded = 0;
+                Log.d(TAG, "fileSize: "+fileSize);
 
                 inputStream = response.body().byteStream();
 
-                Log.d(TAG, "fileSize: "+fileSize);
                 if(inputStream != null) {
                     DigiMeClient.getDefaultKeyLoader().addKeyFromPKCS12Stream(inputStream, "<< contract password >>");
                     DigiMeClient.getInstance().createSession("<< contract id >>", new SDKCallback<CASession>() {

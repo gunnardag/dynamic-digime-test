@@ -4,5 +4,5 @@ app = Flask(__name__)
 
 @app.route('/')
 def root():
-    return send_file('9sljFupcf2VRUh2SviksY7acmUcUcSDB.p12')
+    return send_file('<< contract id >>.p12')
 
