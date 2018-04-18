@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Private Digital Survey</string>
+
+    <string name="digime_app_id">JrEe7zSvL5N4PHokPdjZ527rBlr7LLtC</string>
+    <string name="digi_me_app_package">me.digi.app3</string>
+
+    <!-- Main screen strings -->
+    <string name="give_permission">Participate</string>
+    <string name="cancel_permission">Cancel</string>
+    <string name="email">Email address (required for £50 reward)</string>
+    <string name="email_empty_error">This field cannot be blank</string>
+    <string name="email_validation_error">Please enter a valid email</string>
+    <string name="main_title">Panel research study for leading global healthcare company</string>
+    <string name="rider_a_title_old">To participate in this research panel successfully you are requested to allow your social media content to be analysed. Access is on-device only. None of your content leaves your device. Click here for more information.</string>
+    <string name="rider_a_title">To participate in this research panel successfully you are requested to allow your social media content to be analysed. Access is on-device only. None of your content leaves your device. Click <u>here</u> for more information.</string>
+    <string name="rider_a_title_html">To participate in this research panel successfully you are requested to allow your social media content to be analysed. Access is on-device only. None of your content leaves your device. Click <u>here</u> for more information.</string>
+    <string name="rider_a_text">To participate in this research panel successfully you are requested to share access to your social media content held in your digi.me account. Access is on-device only. None of your content leaves your device. Click here for more information</string>
+    <string name="rider_b_title_old">You will receive £50.00 in Amazon vouchers as a reward for participating successfully. Click here for more information.</string>
+    <string name="rider_b_title">The first 100 people to successfully participate will each receive a £50 Amazon voucher.</string>
+    <string name="rider_b_text">To participate in this study you will need to submit your email address in order to process your reward (£50,00 in Amazon vouchers for each individual who is eligible and successfully completes the survey. No participant can receive no more than one reward. reward is to be made available to the first 100 participants who completed the survey successfully. After which the survey will be withdrawn from the market). Your email address is strictly used for this purpose only and shall not be shared with any organisation, other than the research panel company for the purposes to process your reward.</string>
+    <string name="rider_c_title_old">To participate you need to confirm you can answer YES to all questions below</string>
+    <string name="rider_c_title">I can confirm I meet all of the following criteria and am therefore eligible to participate.</string>
+    <string name="rider_c_text">I am:\n\u2022 UK based and English speaking person\n\u2022 Mother of 3 to 12 months old child / children\n\u2022 User of Facebook and/or Twitter\n\u2022 User of an Android phone and / or tablet\n\nIndividuals associated with the running of the survey are excluded from participation. Strictly one remuneration voucher only is available per successful participant.</string>
+
+    <!-- Notification strings -->
+    <string name="notification_title">Don\'t forget to return to</string>
+    <string name="notification_text">Set up digi.me first!</string>
+    <!-- Terms and Conditions strings -->
+    <string name="tac_title">Important information</string>
+    <string name="tac_text">To participate in this research panel successfully you will be requested to give access to your social media content stored within your digi.me account.\n\nYour content will not leave your device nor be shared with any third party. Your content will be analysed automatically on your device and the outcomes of the analysis will be shared with REON Labs ehf. REON Labs ehf will only share the aggregation of anonymised findings of participants of the research study with their client, a leading global healthcare company.\n\nAny findings shared with REON Labs ehf and their client shall be used for this specific research study only.</string>
+    <string name="tac_button_text">Proceed</string>
+
+    <!-- Digi me installation dialog strings -->
+    <string name="digi_me_dialog_message">digi.me app not found</string>
+    <string name="digi_me_dialog_confirm">download</string>
+    <string name="digi_me_dialog_cancel">Cancel</string>
+    <string name="digi_me_dialog_url">https://www.digi.me/download</string>
+
+    <!-- Permission denied screen strings -->
+    <string name="permission_denied_title">Something went wrong…</string>
+    <string name="permission_denied_text">Lorem ipsum dolor sit amet, nullam melius commune in vix, pro cibo nominati eu.</string>
+    <string name="connection_error">Error connecting to the server</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_queries_available_title">You are done already! No further action required.</string>
+    <string name="no_queries_available_message">You may see this screen if you have already completed the sharing process. In which case there are no new sharing requests pending for you. Sit back, explore the digi.me app and wait for your reward voucher to be emailed to you.\n\nThank you for participating!</string>
+
+    <!-- Permission granted screen strings -->
+    <string name="permission_granted_title">Congratulations!</string>
+    <string name="permission_granted_text">Thank you for participating.\nThe permission you granted to analyse your Facebook and Twitter content in your digi.me library has been successful. The social media analysis has taken place and the answers only have been shared. None of your digi.me library’s actual content has been shared.\n\nIf you are one of the first 100 participants to complete successfully, then your £50 Amazon voucher will be sent to the email address provided within 5 business days. Please keep an eye on your inbox!\n\nThank you for participating successfully and remember that you can continue to enjoy your main digi.me application – it’s free!</string>
+    <string name="completed_button">Submit</string>
+
+    <!-- No data available screen strings -->
+    <string name="no_data_title">Get it, See it\nThen Share it!</string>
+    <string name="no_data_text">No data seems to be available. Have you set up your digi.me account successfully and connected (at least) your Facebook or Twitter account?\n\nOpen the digi.me app on your device, select a private location in the Cloud to store your personal library (like a folder location within a Dropbox or GoogleDrive account). Then connect your online accounts from social media, financial service providers, healthcare records, wearables, etc.\n\nWhen you have completed setting up your digi.me account you can participate in this survey by consenting to share access to parts of your data for the purposes of this survey.</string>
+    <string name="no_data_button">Open\ndigi.me</string>
+
+    <!-- No data available screen strings -->
+    <string name="digime_needed_title">Get it, See it\nThen Share it!</string>
+    <string name="digime_needed_text">You will need to get your data before you can share any of it. This you do by downloading your digi.me app, deciding where to store your private library and then connecting any sources of data you like (like Facebook and Twitter content).\n\nAfter you have set up your digi.me account, come back here and share access to your data in a secure way with this app.</string>
+    <string name="digime_needed_button">Download\ndigi.me</string>
+
+    <!-- Permission loading screen strings -->
+    <string name="permission_loading_title">Loading, please wait.</string>
+    <string name="permission_loading_text">We take the security of your personal data very seriously.\nFor your protection we are validating your account and that of the party you have granted access to.</string>
+    <string name="permission_loading_message_1">Access for analysing your data on-device only</string>
+    <string name="permission_loading_message_2">Analysis of your data on your device</string>
+    <string name="permission_loading_message_3">Analysis results only being shared</string>
+    <string name="send_user_to_consenteddata"><![CDATA[<a href=\'http://consenteddata.com\'>See what other apps are available.</a>]]></string>
+
+    <!-- Select survey screen strings -->
+
+    <string name="group_test_title">Please select which survey you would like to participate in</string>
+    <string name="group_test_button">UK mothers of young children\n\nWellbeing survey, use of certain words in Facebook, Twitter</string>
+    <string name="run_all_queries">Run all queries</string>
+</resources>
