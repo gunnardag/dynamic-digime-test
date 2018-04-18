@@ -7,8 +7,9 @@
 3. In RequestHandler change << your computers ip >> to your computer's ip.
 4. Add your p12 file in the python folder
 5. In app.py in your pyhon folder change << contract id >> to the p12 file's name
-6. navigate to your python folder and run the following commands 
+6. navigate to your python folder and run the following commands (you can skip the first one if you already have flask installed)
 ```bash
+pip install flask
 export FLASK_APP = app.py
 flask run --host=0.0.0.0
 ```
