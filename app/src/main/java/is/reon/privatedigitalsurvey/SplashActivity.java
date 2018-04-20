@@ -1,5 +1,6 @@
 package is.reon.privatedigitalsurvey;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -62,7 +63,25 @@ public class SplashActivity extends AppCompatActivity {
                     DigiMeClient.getInstance().createSession("<< contract id >>", new SDKCallback<CASession>() {
                         @Override
                         public void succeeded(SDKResponse<CASession> sdkResponse) {
-                            Log.d(TAG, "succeeded: session created");
+                            Log.d(TAG, "succeeded creating session");
+                            final DigiMeAuthorizationManager manager = new DigiMeAuthorizationManager("", "", sdkResponse.body);
+                            DigiMeClient.getInstance().authorizeInitializedSessionWithManager(manager, SplashActivity.this, new SDKCallback<CASession>() {
+                                @Override
+                                public void succeeded(SDKResponse<CASession> sdkResponse) {
+                                    Log.d(TAG, "succeeded authorization");
+                                    if(manager.isInProgress()) {
+                                        manager.cancelOngoingAuthorization();
+                                    }
+                                }
+
+                                @Override
+                                public void failed(SDKException e) {
+                                    Log.d(TAG, "failed authorization");
+                                    if(manager.isInProgress()) {
+                                        manager.cancelOngoingAuthorization();
+                                    }
+                                }
+                            });
                         }
 
                         @Override
@@ -102,5 +121,18 @@ public class SplashActivity extends AppCompatActivity {
                     .create(RequestHandler.class);
         }
         return queryService;
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d(TAG, "onActivityResult: got result");
+        Log.d(TAG, "onActivityResult: requestCode: "+requestCode);
+        Log.d(TAG, "onActivityResult: resultCode: "+resultCode);
+        DigiMeClient.getInstance().getAuthManager().onActivityResult(requestCode, resultCode, data);
+        if(resultCode!= 0){
+//            getFiles();
+        } else {
+//            restartApp();
+        }
     }
 }
